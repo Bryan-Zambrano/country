@@ -1,6 +1,15 @@
-<input
+<!-- <input
     type="text"
     [placeholder]="placeHolder"
     class="form-control"
     (keyup.enter)="searchValue(txtInput.value)"
+    (keyup)="onKeyPress(txtInput.value)"
+    #txtInput> -->
+
+    <input
+    [value]="initialValue"
+    type="text"
+    [placeholder]="placeHolder"
+    class="form-control"
+    (keyup)="onKeyPress(txtInput.value)"
     #txtInput>
